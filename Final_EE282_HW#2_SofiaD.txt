@@ -1,0 +1,170 @@
+EE282 Homework #2 Assignment 
+Generating 3 HW questions based on the three prompts 
+Question #1: Bash 
+Prompt: Ask a problem that requires a student to understand basic manipulation of files. Your question should require an answer using the following commands/ concepts: ls, touch, mv, rm 
+Say that you are a graduate student working on a project in your lab to look at different opsin types in Speyeria mormonia butterfly eyes. Your lab keeps all the project files in a shared project/ directory on one server and your PI asked if you could organize all the files for the project. 
+Using Bash, how would you do the following things? 
+1. List all of the contents of the project/ directory to see what files are there. 
+2. Create three empty files named Speyeriadata1.txt, Speyeriadata2.txt, and notes.txt 
+3. Rename notes.txt to README.txt 
+4. Organize all of the data into a subdirectory by creating a new directory called raw_data/ and then move Speyeriadata1.txt and Speyeriadata2.txt into it. 
+5. You then find that there is an issue with the Speyeriadata2.txt file and want to delete it. How do you delete it from inside the raw_data/ directory? 
+6. How would you check off all of your work to confirm that you organized all the Speyeria project files correctly? (Hint: list the contents of both project/ and raw_data/) 
+KEY: 
+# 1. List contents of the project directory 
+ls 
+# 2. Create three empty files 
+touch Speyeriadata1.txt Speyeriadata2.txt notes.txt
+
+
+# 3. Rename notes.txt to README.txt 
+mv notes.txt README.txt 
+# 4. Create raw_data directory and move data files 
+mkdir raw_data 
+mv Speyeriadata1.txt Speyeriadata2.txt raw_data/ 
+# 5. Delete Speyeriadata2.txt from raw_data 
+rm raw_data/data2.txt 
+# 6. List contents to verify changes 
+ls 
+ls raw_data 
+Question #2: 
+Prompt: Ask a question that requires a student understand the difference between accessing a column in a matrix with numeric indices versus accessing a column in a data frame with numeric indices. Your question should require an answer comparing the following: mymatrix[,1] vs mydf[,1] vs. mydf[1], vs. mydf[[1]]. Can change file names from mydf to what I want 
+1. Imagine that you are working in a lab conducting immunohistochemistry experiments on Speyeria mormonia butterfly eyes to look at opsin expression and your PI gives you two versions of a dataset from one of your experiments to look at: 
+One of the datasets is stored as a matrix. 
+The other dataset is stored as a data frame. 
+To get a better look at the dataset you load both versions into R and this is what it looks like: 
+mymatrix <- matrix(c(1, 2, 3, 4), nrow = 2) 
+colnames(mymatrix) <- c(“Opsin Types”, “Visual Patterns”) 
+Speyeriadf <- data.frame( 
+ Opsin Types = c(1, 2),
+ Visual Patterns = c(blue, uv) 
+Using the data above from the project, can you predict the Outputs for the following expressions? : 
+mymatrix[, 1] 
+Speyeriadf[, 1] 
+Speyeriadf[1] 
+Speyeriadf[[1]] 
+1. Write the expected output for each expression. 
+2. Is each output a numeric vector or dataframe?
+3. Indicate whether the column names and dimensions were preserved for each output. 
+KEY: 
+1. mymatrix[,1] 
+Output: 
+[1] 1 2 
+Type/Class: 
+Numeric vector 
+No preserved column names 
+No dimensions preserved 
+Explanation: 
+Matrices are atomic structures. Extracting a single column drops dimensions by default, returning a vector.  
+
+
+2. Speyeriadf[,1] 
+Output: 
+[1] 1 2 
+Type/Class: 
+Numeric vector
+No column names preserved. 
+No dimensions preserved. 
+Explanation: 
+Using [, 1] on a data frame behaves like a matrix-style indexing. R simplifies the result and drops the data frame structure. 
+3. Speyeriadf[1] 
+Output: 
+Opsin Types 
+1 1 
+2 2 
+Type/Class: 
+Data frame 
+Column names are preserved. 
+Dimensions are preserved. 
+Explanation: 
+Single brackets [ return a subset of the data frame, not the contents of the column. 
+
+
+4. Speyeriadf[[1]] 
+Output: 
+[1] 1 2 
+Type/Class: 
+Numeric vector 
+Column names are not preserved. 
+Dimensions are not preserved. 
+Explanation:
+Double brackets [[ means the contents of a single column, which removes all of the data frame structure. 
+Question #3: 
+##Prompt: Ask a question that requires a student to understand how to create a simple script and make it usable by everyone, but only writable by its creator. Your question should require an answer using chmod NNN (using optical permissions). 
+You have been working on some code for your Speyeria mormonia butterfly project and just wrote a short R script that prints a final summary message each time after finishing an analysis. Your labmates were interested in your script and asked if they could use it. Your whole lab uses a shared Linux server. You have no problem sharing your R script but would not want anyone to edit it. 
+To start you create a file called summary.Speyeria with the following contents: 
+#!/usr/bin/env Rscript 
+print("Speyeria mormonia summary complete") 
+When checking the file permissions, you realize that the script is not executable. 
+How would you share your script with your labmates so that your script is executable by everyone but only you can edit the script, to avoid any potential or accidental changes? 
+1. What command would you use to change the permissions of summary.Speyeria so that: 
+* You as the owner can read, write, and execute the script. 
+* Other lab members can read and execute the script, but not change it.
+* Any other user on the system can read and execute the script but not change it. 
+Hint: Your answer must be numeric (octal) permissions with chmod in the form of chmod NNN summary.Speyeria
+
+
+2. Can you explain what each individual digit of your octal permission settings represents? 
+
+
+3. How can you check your work to ensure all permissions were assigned correctly?
+
+
+
+
+KEY: 
+
+
+1. in Bash: 
+
+
+The correct chmod Command is: 
+        chmod 755 summary.Speyeria
+
+
+The three digits 755 correspond to owner, group, and others, in that order. Each digit is the sum of the permission values.
+
+
+
+
+2. This is what each individual digit means
+The first digit 7 —> permissions for the owner:
+
+
+ 7= 4 (read) + 2 (write) + 1 (execute)
+
+
+You as the owner can read, write/ change, and execute your script.  
+
+
+Second digit 5 —> permissions for the group: 
+
+
+5 = 4 (read) + 1 (execute) 
+
+
+The group can view your script and run it, but not be able to change it. 
+
+
+Third digit 5 —> permissions for others:
+
+
+5 = 4 (read) + 1 (execute) 
+
+
+Anyone can view it and run your script but not be able to change it. 
+
+
+3. To double check your work you can use the ls command:
+
+
+ls -1 summary.speyeria
+
+
+And if all the permissions are assigned correctly then you should get this output:
+-rwxr-xr-x summary.Speyeria
+
+
+        Owner (rwx): read, write, execute
+        Group (r-x): read, execute
+        Others (r-x): read, execute
