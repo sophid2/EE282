@@ -36,7 +36,9 @@ By examining opsin protein expression and eye morphology, we can identify how sp
 
 ## **References**
 
-Arikawa K, Scholten DG, Kinoshita M, Stavenga DG. 2017\. The eyes and vision of butterflies. J Physiol 595: 5457-5464. Briscoe AD, Chittka L. 2001\. The evolution of color vision in insects. Annu Rev Entomol 46: 471-510.
+Arikawa K, Scholten DG, Kinoshita M, Stavenga DG. 2017\. The eyes and vision of butterflies. J Physiol 595: 5457-5464.
+
+Briscoe AD, Chittka L. 2001\. The evolution of color vision in insects. Annu Rev Entomol 46: 471-510.
 
 Feuda R, Hamilton SC, McInerney JO, Pisani D. 2016\. Conservation, duplication, and divergence of five opsin genes in insect evolution. Genome Biol Evol 8: 2882-2898.
 
