@@ -92,11 +92,11 @@ ee282                    /data/homezvol1/sophid2/miniforge3/envs/ee282
     113 Y  
 (ee282) \[sophid2@hpc3-l18-05:\~/homework3\] $
 (ee282) \[sophid2@hpc3-l18-05:\~/homework3\] $ls  
-**dmel-all-chromosome-r6.66.fasta.gz**  **dmel-all-r6.66.gtf.gz**  homework3.sh  
+#dmel-all-chromosome-r6.66.fasta.gz  dmel-all-r6.66.gtf.gz  homework3.sh  
 (ee282) \[sophid2@hpc3-l18-05:\~/homework3\] $nano [homework3.sh](http://homework3.sh)  
 (ee282) \[sophid2@hpc3-l18-05:\~/homework3\] $chmod \+x homework3.sh  
 (ee282) \[sophid2@hpc3-l18-05:\~/homework3\] $ls \-l homework3.sh  
-\-rwxr-xr-x 1 sophid2 sophid2 101 Feb 19 16:19 **homework3.sh**  
+# \-rwxr-xr-x 1 sophid2 sophid2 101 Feb 19 16:19 homework3.sh  
 (ee282) \[sophid2@hpc3-l18-05:\~/homework3\] $  
 (ee282) \[sophid2@hpc3-l18-05:\~/homework3\] $md5sum dmel-all-r6.66.gtf.gz  
 #ea600dbb86f1779463f69082131753cd  dmel-all-r6.66.gtf.gz
@@ -105,14 +105,14 @@ ee282                    /data/homezvol1/sophid2/miniforge3/envs/ee282
 ### **Verify the file integrity of the gzipped gtf annotation using a checksum**
 ```r
 (ee282) \[sophid2@hpc3-l18-05:\~/homework3\] $md5sum dmel-all-r6.66.gtf.gz
-ea600dbb86f1779463f69082131753cd  [dmel-all-r6.66.gtf.gz](http://dmel-all-r6.66.gtf.gz)
+# ea600dbb86f1779463f69082131753cd  [dmel-all-r6.66.gtf.gz](http://dmel-all-r6.66.gtf.gz)
 
 #The output from Flybase: ea600dbb86f1779463f69082131753cd  dmel-all-r6.66.gtf.gz
 #The output matches the md5Sumtxt file from Flybase.
 
 # Checking file integrity using checksum (cksum command) 
 (ee282) [sophid2@login-i17:~/homework3] $cksum dmel-all-r6.66.gtf.gz
-3717293822 4059663 dmel-all-r6.66.gtf.gz
+# 3717293822 4059663 dmel-all-r6.66.gtf.gz
 
 ```
 
