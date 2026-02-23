@@ -1,11 +1,8 @@
-**HW3 Submission:** 
+# **HW3 Submission:** 
 
 **Part 1 of HW3**   
-**Summarize a Genome Assembly**
-
-* ccb86e94117eb4eeaaf70efb6be1b6b9  dmel-all-chromosome-r6.66.fasta.gz   
-  * This is for checking the file integrity\!\! So the second part of the question, I will write in the markdown that I checked the md5sum.txt file and the file that popped up on my terminal with md5sum matched this file in md5sumtxt
-
+## **Summarize a Genome Assembly**
+`
 (base) \[sophid2@login-i15:\~\] $mkdir homework3  
 (base) \[sophid2@login-i15:\~\] $mv dmel-all-chromosome-r6.66.fasta.gz homework3/  
 (base) \[sophid2@login-i15:\~\] $cd homework3/  
@@ -42,7 +39,12 @@ Command flags
    \-detailed        outputs name and size of each record  
                     has the side effect of printing nothing else  
    \-tab             output statistics in a tab separated format  
-   \-veryDetailed    outputs name, size, \#Ns, \#real, \#upper, \#lower of each record  
+   \-veryDetailed    outputs name, size, \#Ns, \#real, \#upper, \#lower of each record 
+   '''
+### *Checking File Integrity 
+(ee282) \[sophid2@hpc3-l18-05:\~/homework3\] $md5sum dmel-all-chromosome-r6.66.fasta.gz 
+* ccb86e94117eb4eeaaf70efb6be1b6b9  dmel-all-chromosome-r6.66.fasta.gz   
+  * This is for checking the file integrity\!\! So the second part of the question, I will write in the markdown that I checked the md5sum.txt file and the file that popped up on my terminal with md5sum matched this file in md5sumtxt
 (ee282) \[sophid2@hpc3-l18-05:\~/homework3\] $faSize dmel-all-chromosome-r6.66.fasta.gz  
 143726002 bases (1152978 N's 142573024 real 142573024 upper 0 lower) in 1870 sequences in 1 files  
 Total size: mean 76858.8 sd 1382100.2 min 544 (211000022279089) max 32079331 (3R) median 1577  
