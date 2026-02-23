@@ -13,7 +13,7 @@ bash: fasize: command not found...
 (base) \[sophid2@login-i15:\~/homework3\] $ srun \-A ecoevo282\_class \-c 1 \--pty bash \-i  
 (base) \[sophid2@hpc3-l18-05:\~/homework3\] $ module load miniconda3   
 (base) \[sophid2@hpc3-l18-05:\~/homework3\] $ls  
-**dmel-all-chromosome-r6.66.fasta.gz**  
+# dmel-all-chromosome-r6.66.fasta.gz  
 (base) \[sophid2@hpc3-l18-05:\~/homework3\] $conda env list  
 \# conda environments:  
 \#  
