@@ -1,8 +1,8 @@
 # **HW3 Submission:** 
 
-**Part 1 of HW3**   
+**Part 1 of homework 3**   
 ## **Summarize a Genome Assembly**
-`
+```r
 (base) \[sophid2@login-i15:\~\] $mkdir homework3  
 (base) \[sophid2@login-i15:\~\] $mv dmel-all-chromosome-r6.66.fasta.gz homework3/  
 (base) \[sophid2@login-i15:\~\] $cd homework3/  
@@ -40,11 +40,18 @@ Command flags
                     has the side effect of printing nothing else  
    \-tab             output statistics in a tab separated format  
    \-veryDetailed    outputs name, size, \#Ns, \#real, \#upper, \#lower of each record 
-   '''
-### *Checking File Integrity 
-(ee282) \[sophid2@hpc3-l18-05:\~/homework3\] $md5sum dmel-all-chromosome-r6.66.fasta.gz 
-* ccb86e94117eb4eeaaf70efb6be1b6b9  dmel-all-chromosome-r6.66.fasta.gz   
-  * This is for checking the file integrity\!\! So the second part of the question, I will write in the markdown that I checked the md5sum.txt file and the file that popped up on my terminal with md5sum matched this file in md5sumtxt
+```
+
+### Checking File Integrity 
+```r
+(ee282) \[sophid2@hpc3-l18-05:\~/homework3\] $ md5sum dmel-all-chromosome-r6.66.fasta.gz  
+ccb86e94117eb4eeaaf70efb6be1b6b9  dmel-all-chromosome-r6.66.fasta.gz  
+  
+# Output from md5Sumtxt file: ccb86e94117eb4eeaaf70efb6be1b6b9  dmel-all-chromosome-r6.66.fasta.gz
+# Confirmed with the md5sumtxt file for dmel-all-chromosome-r6.66.fasta.gz and the output matches what is listed in the txt file.
+```
+### Calculate Summaries of the Genome
+```r
 (ee282) \[sophid2@hpc3-l18-05:\~/homework3\] $faSize dmel-all-chromosome-r6.66.fasta.gz  
 143726002 bases (1152978 N's 142573024 real 142573024 upper 0 lower) in 1870 sequences in 1 files  
 Total size: mean 76858.8 sd 1382100.2 min 544 (211000022279089) max 32079331 (3R) median 1577  
@@ -52,19 +59,16 @@ N count: mean 616.6 sd 6960.7
 U count: mean 76242.3 sd 1379508.4  
 L count: mean 0.0 sd 0.0  
 %0.00 masked total, %0.00 masked real  
-(ee282) \[sophid2@hpc3-l18-05:\~/homework3\] $ md5sum dmel-all-chromosome-r6.66.fasta.gz  
-ccb86e94117eb4eeaaf70efb6be1b6b9  dmel-all-chromosome-r6.66.fasta.gz  
-(ee282) \[sophid2@hpc3-l18-05:\~/homework3\] $  
-Second Part of Question 1:  
-**Calculate Summaries of the Genome**
 
-1. **Total number of nucleotides \=** mean 616.6 sd 6960.7  
-2. **Total number of Ns \=**  1152978  
-3. **Total number of sequences \=** 1870
-
+# 1. **Total number of nucleotides \=** mean 616.6 sd 6960.7  
+# 2. **Total number of Ns \=**  1152978  
+# 3. **Total number of sequences \=** 1870
+```
+---
 **Part 2 of homework 3**
 
-**Summarize an annotation file**  
+## **Summarize an annotation file**  
+```r
 (ee282) \[sophid2@hpc3-l18-05:\~/homework3\] $ls  
 dmel-all-chromosome-r6.66.fasta.gz  dmel-all-r6.66.gtf.gz  
 (ee282) \[sophid2@hpc3-l18-05:\~/homework3\] $zcat dmel-all-r6.66.gtf.gz \\  
@@ -97,7 +101,6 @@ dmel-all-chromosome-r6.66.fasta.gz  dmel-all-r6.66.gtf.gz
    2704 X  
     113 Y  
 (ee282) \[sophid2@hpc3-l18-05:\~/homework3\] $
-
 (ee282) \[sophid2@hpc3-l18-05:\~/homework3\] $ls  
 **dmel-all-chromosome-r6.66.fasta.gz**  **dmel-all-r6.66.gtf.gz**  homework3.sh  
 (ee282) \[sophid2@hpc3-l18-05:\~/homework3\] $nano [homework3.sh](http://homework3.sh)  
@@ -107,29 +110,26 @@ dmel-all-chromosome-r6.66.fasta.gz  dmel-all-r6.66.gtf.gz
 (ee282) \[sophid2@hpc3-l18-05:\~/homework3\] $  
 (ee282) \[sophid2@hpc3-l18-05:\~/homework3\] $md5sum dmel-all-r6.66.gtf.gz  
 ea600dbb86f1779463f69082131753cd  dmel-all-r6.66.gtf.gz
-
-### File Integrity
-
+```
+## Checking File Integrity
 ### **Verify the file integrity of the gzipped gtf annotation using a checksum**
+```r
+(ee282) \[sophid2@hpc3-l18-05:\~/homework3\] $md5sum dmel-all-r6.66.gtf.gz
+ea600dbb86f1779463f69082131753cd  [dmel-all-r6.66.gtf.gz](http://dmel-all-r6.66.gtf.gz)
 
-### (ee282) \[sophid2@hpc3-l18-05:\~/homework3\] $md5sum dmel-all-r6.66.gtf.gz
+#The output from Flybase: ea600dbb86f1779463f69082131753cd  dmel-all-r6.66.gtf.gz
+#The output matches the md5Sumtxt file from Flybase.
 
-### ea600dbb86f1779463f69082131753cd  [dmel-all-r6.66.gtf.gz](http://dmel-all-r6.66.gtf.gz)
+# Checking file integrity using checksum (cksum command) 
+(ee282) [sophid2@login-i17:~/homework3] $cksum dmel-all-r6.66.gtf.gz
+3717293822 4059663 dmel-all-r6.66.gtf.gz
 
-- Matches the md5sum.txt file on flybase\!  
-- ea600dbb86f1779463f69082131753cd  [dmel-all-r6.66.gtf.gz](http://dmel-all-r6.66.gtf.gz)   
-- 
+```
 
-### 
+## Compiling a Report Summarizing the Annotation
 
-### 
-
-### Compile a Report Summarizing the Annotation
-
-1. **Total number of features of each type, sorted from the most common to the least common:** 
-
-**CODE:** 
-
+### 1. **Total number of features of each type, sorted from the most common to the least common:** 
+```bash
 (base) \[sophid2@login-i17:\~/homework3\] $zcat dmel-all-r6.66.gtf.gz | \\  
 awk '$0 \!\~ /^\#/ {print $3}' | \\  
 sort | uniq \-c | sort \-nr
@@ -153,17 +153,9 @@ sort | uniq \-c | sort \-nr
     262 pre\_miRNA  
     115 rRNA  
      32 snRNA
-
-2. **Total number of genes per chromosome arm (X, Y, 2L, 2R, 3L, 3R, 4\) \=**   
-- **X :** 2704  
-- **Y:** 113  
-- **2L:** 3508  
-- **2R:** I3649  
-- **3L:** 3481  
-- **3R:** 4226  
-- **4:** 114
-
-**CODE:**   
+```
+### **Total number of genes per chromosome arm (X, Y, 2L, 2R, 3L, 3R, 4\) \=**   
+```bash 
 (base) \[sophid2@login-i17:\~/homework3\] $zcat dmel-all-r6.66.gtf.gz | \\  
 awk '  
 BEGIN { FS="\\t" }  
@@ -176,7 +168,7 @@ END {
 }  
 ' | sort
 
-**OUTPUT:**   
+#OUTPUT:  
 211000022278279	1  
 211000022278436	1  
 211000022278449	1  
@@ -201,4 +193,13 @@ mitochondrion\_genome	38
 rDNA	21  
 Unmapped\_Scaffold\_8\_D1580\_D1567	2  
 X	2704  
-Y	113  
+Y	113
+```
+### Answers for question 2
+**X**: 2704  
+**Y**: 113  
+**2L**: 3508  
+**2R**: 3649  
+**3L**: 3481  
+**3R**: 4226  
+**4**: 114
