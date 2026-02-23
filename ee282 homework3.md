@@ -50,9 +50,9 @@ ee282                    /data/homezvol1/sophid2/miniforge3/envs/ee282
 #L count: mean 0.0 sd 0.0  
 #%0.00 masked total, %0.00 masked real  
 
-# 1. **Total number of nucleotides \=** mean 616.6 sd 6960.7  
-# 2. **Total number of Ns \=**  1152978  
-# 3. **Total number of sequences \=** 1870
+# 1. Total number of nucleotides \= 143726002
+# 2. Total number of Ns \=  1152978  
+# 3. Total number of sequences \= 1870
 ```
 ---
 **Part 2 of homework 3**
