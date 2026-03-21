@@ -16,7 +16,8 @@ My main goal in analyzing the *Speyeria mormonia* opsin expression and ommatidia
 
 During the summer, I conducted immunohistochemistry (IHC) experiments on male *Speyeria mormonia* butterflies. I generated a large dataset of confocal images, examining the staining of the R1 and R2 photoreceptor cells to determine what opsin protein expression looked like in this system. The focal data I used for this proposal was ommatidia counts using these IHC images. Manual ommatidia counts were performed for the ommatidia opsin patterns of the R1 and R2 photoreceptor cells. Ommatidia subtypes were counted for six of the best-quality images, for morphology, five of the best-quality longitudinal section IHC images were used and individual ommatidia were marked based on morphological structure. Images were viewed at full resolution in ZEISS ZEN Lite (Carl Zeiss, 2026), and ommatidia were individually marked according to their R1/R2 photoreceptor cell staining. These eleven best IHC confocal images were used to establish a workable dataset to explore opsin patterning and ommatidia morphology.
 
-![][image1]  
+  <img width="730" height="350" alt="Screenshot 2026-03-20 at 1 02 59 PM" src="https://github.com/user-attachments/assets/09744ac4-34be-4a43-8e5b-42926e8f89df" />
+
 **Figure 1:** *Speyeria mormonia* males used for this project. 
 
 | Sample ID | Sex | Location |
@@ -48,7 +49,9 @@ An exploratory analysis was conducted on the abundance and distribution of photo
 
 **Table 2:** Opsin expression pattern key for ommatidia counts.
 
-![][image2]  
+
+ <img width="498" height="589" alt="Screenshot 2026-03-20 at 5 35 54 PM" src="https://github.com/user-attachments/assets/2b5521e5-ba11-4a92-8864-6d131d461d38" />
+
 **Figure 2:** *Speyeria mormonia* sample GO37 ommatidia counts and labeling.
 
  
@@ -63,23 +66,27 @@ Microscopy panel figures were created to clearly illustrate the different opsin 
 
 The opsin expression pattern microscopy panel clearly displays the different opsin patterns—B-B, UV-UV, UV-B, and B-LW—defined by staining of the R1 and R2 photoreceptor cells. Sample GO35 was selected for this panel because it exhibited the clearest opsin signals in the R1/R2 photoreceptor cells and was one of the samples with the most opsin expression pattern types within the dataset (Figure 3). The microscopy panel illustrating ommatidia morphology was created using sample G041, as this sample exhibited the most variety of both corkscrew-shaped and straight ommatidia (Figure 4). This allowed both ommatidia types to be shown together in the same panel, effectively highlighting their presence and variation within a single individual.
 
-![][image3]  
+  <img width="795" height="402" alt="Screenshot 2026-03-20 at 5 36 44 PM" src="https://github.com/user-attachments/assets/3063bd2a-102f-4d41-aa45-a52fe957f103" />
+
 **Figure 3:** *Speyeria mormonia* male eye microscopy panel highlighting opsin expression pattern types. Images 1-4 show the R1-R8 photoreceptor cells mimicking the opsin expression patterns of the ommatidia selected from the IHC image.
 
  
 
-![][image4]  
+ <img width="788" height="304" alt="Screenshot 2026-03-20 at 5 37 19 PM" src="https://github.com/user-attachments/assets/33e4803a-61d9-4b10-90a9-fce9a019544c" />
+
 **Figure 4:** Fluorescence microscopy panel of *Speyeria mormonia* male ommatidia morphology.  Showing the different examples of corkscrew morphologies seen in the ommatidia of males. Any ommatidia not showing this morphology was counted as straight.
 
 The stacked barplot illustrating the relative abundance of opsin expression patterns displays the distribution of each opsin pattern type—B-B, B-LW, UV-B, UV-UV, and Dots—based on expression in the R1/R2 photoreceptor cells of six male *Speyeria mormonia* butterflies. Additionally, a distinct dot pattern was also observed going across the R1-R8 photoreceptor cells throughout the ommatidia in certain individuals. Each butterfly exhibited different numbers of ommatidia available for counting and showed a range of opsin expression pattern abundances. Specifically, samples GO27, GO35, GO37, and GO41 demonstrated at least four distinct opsin expression patterns in their R1/R2 photoreceptor cells (Figure 5). In contrast, samples GO40 and GO43 showed less variation, with GO43 containing only one opsin pattern and GO40 displaying up to three different opsin patterns in its R1/R2 photoreceptor cells (Figure 5).
 
-**![][image5]**
+
+<img width="698" height="431" alt="Screenshot 2026-03-17 at 6 37 39 PM" src="https://github.com/user-attachments/assets/bb1c9e72-cfa2-4328-b45b-520e075d0092" />
 
 **Figure 5:** Relative abundance barplot for opsin pattern types characterized by opsin expression in the R1/R2 photoreceptor cells of six different *Speyeria mormonia* males.
 
 The stacked barplot for ommatidia morphology types illustrates the variation in ommatidia morphology across five male *Speyeria mormonia* butterflies. Among these, two individuals had only straight ommatidia, while the other three exhibited both corkscrew and straight morphologies. Sample GO37 had the lowest number of corkscrew-shaped ommatidia, whereas GO41 had the highest, followed by GO27, which had the second greatest abundance of corkscrew ommatidia (Figure 6). Samples GO26 and GO35 contained exclusively straight ommatidia, with no corkscrew types observed (Figure 6).
 
-**![][image6]**
+
+<img width="698" height="431" alt="Screenshot 2026-03-17 at 6 37 16 PM" src="https://github.com/user-attachments/assets/ed1c89fd-a51f-427f-8b00-270422a60c88" />
 
 **Figure 6:** Relative Abundance barplot for ommatidia morphology types characterized by straight or corkscrew shaped ommatidia of five *Speyeria mormonia* males. 
 
@@ -93,7 +100,7 @@ By examining opsin protein expression and eye morphology, we can identify how sp
 
  
 
-**References:**
+## **References:**
 
 Arikawa K, Scholten DG, Kinoshita M, Stavenga DG. 2017\. The eyes and vision of butterflies. *J Physiol* 595: 5457–5464.
 
