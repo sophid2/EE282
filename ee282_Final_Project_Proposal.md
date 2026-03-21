@@ -128,7 +128,7 @@ Terakita A. 2005\. The opsins. *Genome Biol* 6: 213\. doi:10.1186/gb-2005-6-3-21
 
 ## 
 
-R code used for my Relative Abundance Plots
+## R code used for my Relative Abundance Plots
 
 \`\`\`r
 
